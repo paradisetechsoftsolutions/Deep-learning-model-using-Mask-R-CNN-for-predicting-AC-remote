@@ -9,13 +9,13 @@ A sample image of masked object from our dataset is shown below:
 
 # Network Architecture for this project
 
-* **Convolutional arcitecture** - 
+* **Convolutional architecture** -  Fully convolutional Network is used along with FasterRCNN which performs downsampling + convolutional and then upsampling and deconvolutional. Semantic information is extracted here.
 
-* **Feature extraction** - 
+* **Feature extraction** - Feature extraction is done by fast rcnn part of the faster rcnn using RoI. These features are used for the faster rcnn. In the developed model coco weights are used and model is trained head layer with the custom class A.C Remote 
 
-* **Bounding box recognition** - 
+* **Bounding box recognition** -Fast RCNN performs bounding box regression and classification. Class is added in the file **custom_training.py**  
 
-* **Mask prediction** - 
+* **Mask prediction** - FCN which is placed after Faster RCNN is used for mask prediction 
 
 # Implementation details of this project
 
