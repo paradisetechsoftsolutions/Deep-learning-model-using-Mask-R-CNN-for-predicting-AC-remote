@@ -19,38 +19,37 @@ A sample image of masked object from our dataset is shown below:
 
 # Implementation details of this project
 
-* **App structure** -   
-├── custom_training.py
-├── dataset
-│   ├── train (**only few images are added here**)
-│   │   │── 7.jpg
-│   │   ├── 8.jpg
-│   │   ├── 9.jpg
-│   │   └── remote_dataset.json
-│   └── val (**only few images are added here**)
-│       ├── 10.webp
-│       ├── 1.jpg
-│       └── via_region_data.json
-├── download.webp
-├── log
-│   └── custom.h5
-├── maskrcnn_predict_for_images.py
-├── mrcnn
-│   ├── config.py
-│   ├── __init__.py
-│   ├── model.py
-│   ├── parallel_model.py
-│   ├── utils.py
-│   └── visualize.py
-├── prediction_for_video.py
-├── prediction.png
-└── video_mask.py
+* **App structure** -     
+├── custom_training.py  
+├── dataset  
+│   ├── train (**only few images are added here**)  
+│   │   │── 7.jpg  
+│   │   ├── 8.jpg  
+│   │   ├── 9.jpg  
+│   │   └── remote_dataset.json  
+│   └── val (**only few images are added here**)  
+│       ├── 10.webp  
+│       ├── 1.jpg  
+│       └── via_region_data.json  
+├── download.webp  
+├── log  
+│   └── custom.h5  
+├── maskrcnn_predict_for_images.py  
+├── mrcnn  
+│   ├── config.py  
+│   ├── __init__.py  
+│   ├── model.py  
+│   ├── parallel_model.py  
+│   ├── utils.py  
+│   └── visualize.py  
+├── prediction_for_video.py  
+├── prediction.png  
+└── video_mask.py  
 
 * **Dataset** - AC Remote dataset is used for creating the customized model. 
 
 * **Training** - Training of the images is done using GPU RTX and config used for training are given in the custom_training.py file
 
-* **Conclusions/Results obtained** -  
 
 # Steps Involved for creating pixel level boundary in an image  
 
