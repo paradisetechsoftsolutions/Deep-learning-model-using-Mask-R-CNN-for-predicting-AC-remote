@@ -19,6 +19,7 @@ from mrcnn import model as modellib, utils
 
 # Directory to save logs and model checkpoints, if not provided
 # through the command line argument --logs
+COCO_WEIGHTS_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
 DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 
 # config file with which we have trained the network
@@ -287,8 +288,12 @@ if __name__ == '__main__':
     else:
         model = modellib.MaskRCNN(mode="inference", config=config,
                                   model_dir=args.logs)
-
-    if args.weights.lower() == "last":
+    if args.weights.lower() == "coco":
+        weights_path = COCO_WEIGHTS_PATH
+        # Download weights file
+        if not os.path.exists(weights_path):
+            utils.download_trained_weights(weights_path) 
+    elif args.weights.lower() == "last":
         # Find last trained weights
         weights_path = model.find_last()[1]
     elif args.weights.lower() == "imagenet":
