@@ -1,5 +1,5 @@
 # Deep-learning-model-using-Mask-R-CNN-for-predicting-AC-remote
-Mask R-CNN is a simple, flexible, and general framework for object instance segmentation. Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. It is capable of separating different objects in a image or a video. Research paper for Mask R-CNN can be found    ![here](https://arxiv.org/pdf/1703.06870.pdf)
+Mask R-CNN is a simple, flexible, and general framework for object instance segmentation. Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. It is capable of separating different objects in a image or a video. Research paper for Mask R-CNN can be found    [here](https://arxiv.org/pdf/1703.06870.pdf)
 
 Faster RCNN was not designed for pixel-to-pixel alignment between network inputs and outputs. Faster R-CNN is advanced by learning the attention mechanism with a Region Proposal Network (RPN). Faster R-CNN produce two outputs for each candidate object that is a class label and a bounding-box offset whereas Mask R-CNN outputs object mask along with two. The additional mask output is distinct from the class and box outputs, requiring extraction of much finer spatial layout of an object.
 
