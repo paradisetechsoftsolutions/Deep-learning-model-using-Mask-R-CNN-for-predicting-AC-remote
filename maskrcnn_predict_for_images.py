@@ -1,5 +1,5 @@
 """
-LIbraries used for prediction
+Libraries used for prediction
 """
 import os
 import sys
@@ -55,13 +55,6 @@ dataset.prepare()
 # Load a random image from the images folder
 class_names = dataset.class_names
 
-# image_id = random.choice(dataset.image_ids)
-# image, image_meta, gt_class_id, gt_bbox, gt_mask = \
-#     modellib.load_image_gt(dataset, config, image_id, use_mini_mask=False)
-# info = dataset.image_info[image_id]
-# print("image ID: {}.{} ({}) {}".format(info["source"], info["id"], image_id,
-#                                        dataset.image_reference(image_id)))
-
 # real time testing on an image
 import matplotlib.image as mpimg
 image = mpimg.imread('download.webp')
@@ -69,6 +62,6 @@ image = mpimg.imread('download.webp')
 # Run object detection
 results = model.detect([image], verbose=1)
 r = results[0]
-visualize.display_instances(
-							image, r['rois'], r['masks'], 
-							r['class_ids'],class_names, r['scores'])
+visualize.display_instances(image, r['rois'], r['masks'], 
+			    r['class_ids'],class_names, r['scores']
+			   )
