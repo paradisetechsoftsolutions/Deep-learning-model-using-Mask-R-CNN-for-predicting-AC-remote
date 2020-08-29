@@ -17,7 +17,7 @@ A sample image of masked object from our dataset is shown below:
 
 * **Mask prediction** - FCN which is placed after Faster RCNN is used for mask prediction   
 
-**Performance Parameters**  
+* **Performance Parameters**  
 Remember performance parameters are calculated with augumentation. Please run the file Custom_File_on_augumentation.py for better results instead of custom_training.py. Also please install imgaug if you need to install Custom_File_on_augumentation.py using pip install imgaug.   
 **After 30 epochs:**  
 Loss: **0.3191**  
@@ -89,4 +89,5 @@ Please screenshot of loss during training from the below link
 
 # References
 * https://github.com/matterport/Mask_RCNN
-* https://arxiv.org/pdf/1703.06870.pdf
+* https://arxiv.org/pdf/1703.06870.pdf  
+* https://github.com/aleju/imgaug
