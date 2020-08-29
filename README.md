@@ -15,7 +15,16 @@ A sample image of masked object from our dataset is shown below:
 
 * **Bounding box recognition** -Fast RCNN performs bounding box regression and classification. Class is added in the file **custom_training.py**  
 
-* **Mask prediction** - FCN which is placed after Faster RCNN is used for mask prediction 
+* **Mask prediction** - FCN which is placed after Faster RCNN is used for mask prediction   
+
+**Performance Parameters**  
+Remember performance parameters are calculated with augumentation. Please run the file Custom_File_on_augumentation.py for better results instead of custom_training.py. Also please install imgaug if you need to install Custom_File_on_augumentation.py using pip install imgaug.   
+**After 30 epochs:** l
+Loss: 0.3191  
+rpn_class_loss: 7.8600e-04  
+rpn_bbox_loss: 0.0761  
+
+
 
 # Implementation details of this project
 
