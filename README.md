@@ -19,12 +19,23 @@ A sample image of masked object from our dataset is shown below:
 
 **Performance Parameters**  
 Remember performance parameters are calculated with augumentation. Please run the file Custom_File_on_augumentation.py for better results instead of custom_training.py. Also please install imgaug if you need to install Custom_File_on_augumentation.py using pip install imgaug.   
-**After 30 epochs:** l
-Loss: 0.3191  
-rpn_class_loss: 7.8600e-04  
-rpn_bbox_loss: 0.0761  
+**After 30 epochs:**  
+Loss: **0.3191**  
+rpn_class_loss: **7.8600e-04**  
+rpn_bbox_loss: **0.0761**  
+mrcnn_class_loss: **0.0102**  
+mrcnn_bbox_loss: **0.0529**  
+mrcnn_mask_loss: **0.1791**  
+val_loss: **0.9307**  
+val_rpn_class_loss: **3.1144e-04**  
+val_rpn_bbox_loss: **0.6140**  
+val_mrcnn_class_loss: **0.0171**  
+val_mrcnn_bbox_loss: **0.1081**  
+val_mrcnn_mask_loss: **0.1912**  
 
+Please screenshot of loss during training from the below link   
 
+![lossTraining](https://user-images.githubusercontent.com/39157936/91633993-6d25fc80-ea0a-11ea-8c2f-9b0252ca00a6.png)
 
 # Implementation details of this project
 
