@@ -29,7 +29,6 @@ DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
 #  Configurations
 ############################################################
  
- 
 class CustomConfig(Config):
     """Configuration for training on the toy  dataset.
     Derives from the base Config class and overrides some values.
